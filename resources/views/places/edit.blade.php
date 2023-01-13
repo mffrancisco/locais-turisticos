@@ -16,7 +16,7 @@
         <button type="submit">Enviar</button>
     </form>
 
-    <form action="/destroy/{{ $place->id }}" method="POST">
+    <form action="/delete/{{ $place->id }}" method="POST">
         @csrf
         <button type="submit">Deletar</button>
     </form>
