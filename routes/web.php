@@ -14,10 +14,10 @@ use App\Http\Controllers\PlaceController;
 |
 */
 
-Route::get('/', [PlaceController::class, 'index']);
-Route::get('/create', [PlaceController::class, 'create']);
-Route::post('/store', [PlaceController::class, 'store']);
-Route::get('/show/{id}', [PlaceController::class, 'show']);
-Route::get('/edit/{id}', [PlaceController::class, 'edit']);
-Route::post('/update/{id}', [PlaceController::class, 'update']);
-Route::post('/destroy/{id}', [PlaceController::class, 'destroy']);
+Route::get('/places', [PlaceController::class, 'index']);
+Route::get('/places/create', [PlaceController::class, 'create']);
+Route::post('/places/store', [PlaceController::class, 'store']);
+Route::get('/places/show/{id}', [PlaceController::class, 'show']);
+Route::get('/places/edit/{id}', [PlaceController::class, 'edit']);
+Route::post('/places/update/{id}', [PlaceController::class, 'update']);
+Route::post('/places/destroy/{id}', [PlaceController::class, 'destroy']);
